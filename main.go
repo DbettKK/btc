@@ -30,6 +30,7 @@ func Cors() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
 		c.Writer.Header().Set("Access-Control-Expose-Headers", "Access-Control-Allow-Origin")
+		c.Writer.Header().Set("Access-Control-Expose-Headers", "token")
 		c.Writer.Header().Set("Access-Control-Allow-Methods", "POST, OPTIONS, GET, PUT")
 
 		if c.Request.Method == "OPTIONS" {
