@@ -10,7 +10,7 @@ import (
 var C *Container
 
 type Container struct {
-	DB *DB
+	DB  *DB
 	Api *Api
 }
 
@@ -37,7 +37,11 @@ func NewDefaultContainer() *Container {
 			db,
 		},
 		Api: &Api{
-			&http.Client{},
+			&http.Client{
+				Transport: &http.Transport{
+					Proxy: http.ProxyFromEnvironment,
+				},
+			},
 		},
 	}
 }
