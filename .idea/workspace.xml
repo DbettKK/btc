@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a4918c4-bffc-4ed2-9119-8caab88c7ce0" name="Changes" comment="" />
+    <list default="true" id="4a4918c4-bffc-4ed2-9119-8caab88c7ce0" name="Changes" comment="fix gin v1.7.7" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +63,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix gin v1.7.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix gin v1.7.7" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
