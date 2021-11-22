@@ -10,4 +10,5 @@ func register(r *gin.Engine) {
 	customizeRegister(r)
 
 	r.GET("/ping", handler.Ping)
+	r.GET("/", handler.IndexHandler)
 }
