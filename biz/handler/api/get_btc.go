@@ -8,13 +8,12 @@ import (
 	"net/http"
 	"net/url"
 	"strconv"
-	"xyz/dbettkk/btc/container"
-	"xyz/dbettkk/btc/dal/api"
-	"xyz/dbettkk/btc/dal/consts"
+	"xyz/dbettkk/btc/biz/container"
+	"xyz/dbettkk/btc/biz/dal/api"
+	"xyz/dbettkk/btc/biz/dal/consts"
 )
 
-
-func SetParam(req *http.Request, btcReq *api.BtcRequest)  {
+func SetParam(req *http.Request, btcReq *api.BtcRequest) {
 	req.Header.Set("Accepts", "application/json")
 	req.Header.Add(consts.ApiKeyHeader, consts.ApiKey)
 

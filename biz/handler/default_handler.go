@@ -2,9 +2,9 @@ package handler
 
 import (
 	"strings"
-	api2 "xyz/dbettkk/btc/dal/api"
-	"xyz/dbettkk/btc/dal/db"
-	"xyz/dbettkk/btc/handler/api"
+	api2 "xyz/dbettkk/btc/biz/dal/api"
+	"xyz/dbettkk/btc/biz/dal/db"
+	"xyz/dbettkk/btc/biz/handler/api"
 )
 
 func VerifyToken(token string) bool {

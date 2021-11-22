@@ -4,7 +4,7 @@ import (
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 	"log"
-	"xyz/dbettkk/btc/container"
+	"xyz/dbettkk/btc/biz/container"
 )
 
 type DB struct {
@@ -17,7 +17,7 @@ func NewDefaultDB() *DB {
 	}
 }
 
-func GetConnect() *gorm.DB{
+func GetConnect() *gorm.DB {
 	db, err := gorm.Open(sqlite.Open("btc.db"), &gorm.Config{})
 	if err != nil {
 		log.Println("db open error")
