@@ -18,7 +18,7 @@ func cors() gin.HandlerFunc {
 		method := c.Request.Method               //请求方法
 		origin := c.Request.Header.Get("Origin") //请求头部
 		var headerKeys []string                  // 声明请求头keys
-		for k, _ := range c.Request.Header {
+		for k := range c.Request.Header {
 			headerKeys = append(headerKeys, k)
 		}
 		headerStr := strings.Join(headerKeys, ", ")
